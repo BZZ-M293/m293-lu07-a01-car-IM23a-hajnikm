@@ -8,7 +8,48 @@
 <body>
 
 <h1>Fahrzeug-Konfigurator</h1>
+<form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+  <fieldset>
+    <legend>Fahrzeugmodell</legend>
+    <select id="Fahrzeugmodell" name="Fahrzeugmodell">
+      <optgroup label='Mercedes'>
+        <option label="A-Klasse">A-Klasse</option>
+        <option label="B-Klasse">B-Klasse</option>
+        <option label="C-Klasse">C-Klasse</option>
+        <option label="CLA">CLA</option>
+        <option label="CLS">CLS</option>
+        <option label="CLE">CLE</option>
+        <option label="AMG">AMG</option>
+      </optgroup>
+      <optgroup label='Tesla'>
+        <option value='Model S'>Model S</option>
+        <option value='Model Y'>Model Y</option>
+        <option value='Model X'>Model X</option>
+        <option value='Model 3'>Model 3</option>
+      </optgroup>
+      <optgroup label='Porsche'>
+        <option value='911'>911</option>
+        <option value='718'>718</option>
+        <option value='Taycan'>Taycan</option>
+        <option value='Panamera'>Panamera</option>
+      </optgroup>
+    </select>
+  </fieldset>
 
+  <fieldset>
+    <legend>Lackfarbe</legend>
+    <input type='radio' id='Schwarz' name='Lackfarbe' value='Schwarz'>
+    <label for='Schwarz'>Schwarz</label>
+    <input type='radio' id='Rot' name='Lackfarbe' value='Rot'>
+    <label for='Rot'>Rot</label>
+    <input type='radio' id='Grau' name='Lackfarbe' value='Grau'>
+    <label for='Grau'>Grau</label>
+    <input type='radio' id='Blau' name='Lackfarbe' value='Blau'>
+    <label for='Blau'>Blau</label>
+  </fieldset>
+
+  <input type='submit' value='absenden'>
+</form>
 
 </body>
 </html>
